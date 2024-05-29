@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- https://sweetalert.js.org/guides -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- video background -->
+
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h1>Weather app</h1>
+        <div class="form">
+          <form id="myForm">
+            <input class="input" type="text" id="cityInput" />
+            <button type="submit" id="getWeatherBtn">Get Weather</button>
+          </form>
+        </div>
+        <div class="weather">
+          <p id="message"></p>
+          <p class="temp" id="temp"></p>
+          <p id="humidity"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
