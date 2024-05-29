@@ -3,6 +3,7 @@ const form = document.querySelector("#myForm");
 const cityInput = document.querySelector("#cityInput");
 const temp = document.querySelector("#temp");
 const humidity = document.querySelector("#humidity");
+
 // const message = document.querySelector("#message");
 const btn = document.querySelector("#getWeatherBtn");
 
@@ -23,8 +24,8 @@ const formHandler = async (event) => {
 
     form.reset(); // to clear input value only if form is submitted successfully
 
-    temp.innerText = `Temprature${response.data.main.temp}°C`;
-    humidity.innerText = `Humidity${response.data.main.humidity}`;
+    temp.innerText = `Temprature : ${response.data.main.temp}°C`;
+    humidity.innerText = `Humidity : ${response.data.main.humidity}`;
 
     console.log("🚀 ~ formHandler ~ response:", response.data);
 
