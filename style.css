@@ -72,13 +72,15 @@ h1 {
 button {
   background-color: #000000d0;
   color: white;
-  font-size: 18px;
+  font-size: 13px;
   font-style: oblique;
   border-radius: 20px;
-  width: 10vh;
+  width: 9vh;
   height: 50px;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  padding-top: 12px;
+  
+  
 }
 .weather {
   margin-top: 50px;
@@ -98,7 +100,11 @@ p {
     margin-left: 10px;
   }
   button {
+    margin-left: 0;
+    padding-top: 0;
     font-size: 12px;
+    margin-top: 10px;
+    
   }
   .weather {
     margin-left: 0;
